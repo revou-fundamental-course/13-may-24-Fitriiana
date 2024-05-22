@@ -1,0 +1,218 @@
+@media screen and (max-width: 1200px) {
+  .intro-container,
+  .main-container,
+  .main-container-perimeter {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .intro-container,
+  .main-container,
+  .main-container-perimeter {
+    width: 50%;
+  }
+  .img-area-formula {
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+  }
+  .intro-container > .nav-button {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro-container,
+  .main-container,
+  .main-container-perimeter {
+    width: 20%;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", monospace;
+  padding-top: 2rem;
+  background-color: #eef7ff;
+}
+.intro-container {
+  width: 100%;
+  margin: 2rem;
+}
+
+.intro-section h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.intro-section p {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.nav-button {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 30px;
+}
+.left,
+.right {
+  margin: auto;
+}
+#area,
+#perimeter {
+  padding: 10px 20px;
+  background-color: #7ab2b2;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 300px;
+  height: 3rem;
+}
+#area:hover,
+#perimeter:hover {
+  background-color: #cde8e5;
+}
+
+/* section luas */
+.main-container {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 120px;
+}
+.title-luas-container {
+  display: inline-flex;
+}
+.title-luas-container img {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+.img-area-formula {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.deskripsi-luas p {
+  padding-bottom: 10px;
+  text-align: justify;
+}
+.img-luas {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#area-form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#base {
+  margin-left: 18px;
+}
+#base,
+#height {
+  height: 40px;
+  width: 200px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+#result-area {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+/* end of */
+
+/* perimeter section */
+.main-container-perimeter {
+  padding-top: 90px;
+  margin: 20px;
+  width: 100%;
+}
+
+.title-perimeter {
+  display: inline-flex;
+}
+.title-perimeter img {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+.img-perimeter-formula {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.description-perimeter p {
+  padding-bottom: 10px;
+  text-align: justify;
+  margin-right: 40px;
+}
+.core-perimeter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#perimeter-form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  margin-top: 10px;
+}
+#sideA,
+#sideB,
+#sideC {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  font-size: 1rem;
+}
+
+#result {
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Button calculate and button reset style */
+#calculate-area,
+#calculate-perimeter,
+#reset-button {
+  padding: 10px 20px;
+  background-color: #4d869c;
+  color: wheat;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 200px;
+  font-size: 15px;
+  font-weight: bold;
+}
+#calculate-area:hover {
+  background-color: #cde8e5;
+  color: #333;
+}
+
+#calculate-perimeter:hover {
+  background-color: #cde8e5;
+  color: black;
+}
+#reset-button:hover {
+  background-color: #a91d3a;
+}
